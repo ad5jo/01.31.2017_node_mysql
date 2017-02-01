@@ -20,13 +20,14 @@ Use the twitter package inside the response to also return a random tweet
 var http = require("http");
 
 // Here we define a port to listen to localhost
-var PORT = 8080;
+var PORT = 7000;
 
 // Here we create a generic function to handle requests and responses
 function handleRequest(request, response) {
 
   // The below statement is triggered (client-side) when the user visits the PORT URL
-  response.end("It Works!! Path Hit: " + request.url);
+  //response.end("It Works!! Path Hit: " + request.url);
+  response.end("Your house is clean.");
 }
 
 // Here we use the Node HTTP package to create our server.
